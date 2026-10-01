@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Регистрация пользователя</title>
+  </head>
+
+  <body>
+    <h1>Регистрация на сайте</h1>
+    <form action="index.html" method="POST">
+      <fieldset>
+        <legend>Личные данные</legend>
+
+        <label for="username">Имя пользователя:</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          minlength="3"
+          maxlength="20"
+        /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="password">Пароль:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="6"
+        /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Дополнительные сведения</legend>
+
+        <label for="birthdate">Дата рождения:</label><br />
+        <input type="date" id="birthdate" name="birthdate" /><br /><br />
+
+        <label>Пол:</label><br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Мужской</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Женский</label>
+      </fieldset>
+
+      <br />
+      <button type="submit">Зарегистрироваться</button>
+      <button type="reset">Очистить форму</button>
+    </form>
+  </body>
+</html>
